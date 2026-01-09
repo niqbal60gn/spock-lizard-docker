@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SET TITLE</title>
+<script type="text/javascript" src="log4javascript.js">
+</script>
+<script type="text/javascript">
+//JavaScript code goes here
+var logger = log4javascript.getDefaultLogger();
+logger.setLevel(log4javascript.Level.TRACE);
+
+function createRequest( ) {
+	var v;
+
+	try {
+		//For IE
+		v = new ActiveXObject("Microsoft.XMLHTTP"); 
+	} catch (e) {
+		//For Mozilla
+		v = new XMLHttpRequest();
+	}
+
+	if (v == null)
+		throw new Error("XMLHttpRequest not supported");
+
+	return v;
+}
+
+function isReplyReady(r) {
+	if (r.readyState != 4) {
+		return false;
+	}
+	if (r.status != 200) {
+		alert("HTTP reply failed with status: " + r.status);
+		return false;
+	}
+	
+	return true;
+}
+
+</script>
+
+</head>
+<body>
+<h2>Login</h2>
+<div id="message" style="color: red;font-weight: bold"></div>
+<p>
+User ID:<br/>
+<input type="text" id="user" size="20"/><br/>
+Password:<br/>
+<input type="password" id="password" size="20"/><br/>
+<button onclick="sendAjaxRequest();">Login</button>
+</p>
+</body>
+</html>

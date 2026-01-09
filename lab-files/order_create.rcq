@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rest-client version="2.4"><request><http-version>1.1</http-version><http-follow-redirects>false</http-follow-redirects><URL>http://localhost:8080/AcmeWeb/svc/orders</URL><method>POST</method><headers><header key="Accept" value="text/xml"/></headers><body content-type="text/xml" charset="UTF-8">&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#x0D;
+&lt;order&gt;&#x0D;
+    &lt;item&gt;&#x0D;
+        &lt;partNumber&gt;P01010&lt;/partNumber&gt;&#x0D;
+        &lt;quantity&gt;10&lt;/quantity&gt;&#x0D;
+    &lt;/item&gt;&#x0D;
+    &lt;item&gt;&#x0D;
+        &lt;partNumber&gt;P18210&lt;/partNumber&gt;&#x0D;
+        &lt;quantity&gt;5&lt;/quantity&gt;&#x0D;
+    &lt;/item&gt;&#x0D;
+    &lt;clientId&gt;C001&lt;/clientId&gt;&#x0D;
+&lt;/order&gt;</body></request></rest-client>

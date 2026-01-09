@@ -1,0 +1,12 @@
+com\mcnz\roshambo\ScoreService.class
+com\mcnz\rps\spring\RoshamboWebApplication.class
+com\mcnz\rps\spring\ScoreService.class
+com\mcnz\roshambo\Score.class
+com\mcnz\rps\spring\Score.class
+com\webage\spring\samples\hello\api\HelloResource.class
+com\mcnz\rps\spring\WebController.class
+com\webage\spring\samples\hello\api\HelloResponse.class
+com\mcnz\rps\spring\ScoreRepository.class
+com\mcnz\rps\spring\Gesture.class
+com\mcnz\rps\spring\HelloResource.class
+com\mcnz\rps\spring\HelloResponse.class
